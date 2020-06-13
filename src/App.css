@@ -1,15 +1,49 @@
 .App {
   display: flex;
+  margin: 1rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.m-all {
+  margin: 1rem;
+}
+
+.m-l {
+  margin-left: 1rem;
+}
+
+.m-r {
+  margin-right: 1rem;
+}
+
+.bgc-primary {
+  background-color: var(--blue);
+}
+
+.bgc-secondary {
+  background-color: var(--orange);
 }
 
 .col-50 {
   flex: 1 1 50%;
 }
 
+.datasetContainer {
+  position: relative;
+}
+
 .resultsContainer {
-  padding: 1rem;
+  padding: 0 1rem 1rem;
 }
 
 .bold {
   font-weight: bold;
+}
+
+.img-preview {
+  display: block;
+  max-width: 320px;
 }

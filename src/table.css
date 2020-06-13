@@ -7,7 +7,7 @@ table {
 
 th, td {
   vertical-align: top;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid var(--gray-darker);
   line-height: 1rem;
   padding: 1rem;
 }
@@ -15,5 +15,4 @@ th, td {
 th {
   font-weight: bold;
   text-align: left;
-  color: #343334;
 }
