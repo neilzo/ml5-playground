@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import p5 from 'p5';
 import ml5 from 'ml5';
-import nigiriMaguroA from '../assets/nigiri_maguro.jpg';
-import nigiriMaguroB from '../assets/nigiri_maguro_b.jpg';
-import nigiriMaguroC from '../assets/nigiri_maguro_c.jpg';
-import nigiriMaguroD from '../assets/nigiri_maguro_d.png';
-import nigiriSakeA from '../assets/nigiri_salmon.jpg';
-import nigiriSakeB from '../assets/nigiri_salmon_b.jpg';
-import nigiriSakeC from '../assets/nigiri_salmon_c.jpg';
+import nigiriMaguroA from './assets/nigiri_maguro.jpg';
+import nigiriMaguroB from './assets/nigiri_maguro_b.jpg';
+import nigiriMaguroC from './assets/nigiri_maguro_c.jpg';
+import nigiriMaguroD from './assets/nigiri_maguro_d.png';
+import nigiriSakeA from './assets/nigiri_salmon.jpg';
+import nigiriSakeB from './assets/nigiri_salmon_b.jpg';
+import nigiriSakeC from './assets/nigiri_salmon_c.jpg';
 
 import './App.css';
 import './table.css';
