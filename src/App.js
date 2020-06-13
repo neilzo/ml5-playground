@@ -30,6 +30,8 @@ function App() {
       mobileNet = await ml5.featureExtractor('MobileNet');
       console.log('model ready');
       classifier = await mobileNet.classification();
+      await classifier.load('model.json');
+      console.log('custom model loaded');
       await classifier.addImage(document.getElementById('maguroA'), 'maguro');
       await classifier.addImage(document.getElementById('maguroB'), 'maguro');
       await classifier.addImage(document.getElementById('maguroC'), 'maguro');
@@ -62,6 +64,7 @@ function App() {
   };
 
   const handleTrainClick = async () => {
+    // https://media.giphy.com/media/5SzCNbcYNPSWngBJlx/giphy.gif
     await train();
   };
 
@@ -122,9 +125,14 @@ function App() {
     <div className="App">
       <div className="datasetContainer col-50">
         <h1>Data set</h1>
-        <button onClick={handleTrainClick} disabled={loading}>
-          {loading ? 'Training...' : 'Train'}
-        </button>
+        <div className="d-flex">
+          <button onClick={handleTrainClick} disabled={loading}>
+            {loading ? 'Training...' : 'Train'}
+          </button>
+          <button onClick={() => classifier && classifier.save()}>
+            Save Model
+          </button>
+        </div>
         <div className="imageGrid">
           <img src={nigiriMaguroA} id="maguroA" alt="" />
           <img src={nigiriMaguroB} id="maguroB" alt="" />
