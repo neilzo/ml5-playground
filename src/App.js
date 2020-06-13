@@ -15,9 +15,10 @@ import './imageGrid.css';
 
 const floatToPercent = (num) => (num * 100).toFixed(4);
 
+let mobileNet;
+let classifier;
+
 function App() {
-  let mobileNet;
-  let classifier;
   let totalLoss = 0;
   const [output, setOutput] = useState([]);
   const [loading, setLoading] = useState(false);
