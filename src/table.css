@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.75rem 0;
+  font-variant-numeric: tabular-nums;
+}
+
+th, td {
+  vertical-align: top;
+  border-bottom: 2px solid #ccc;
+  line-height: 1rem;
+  padding: 1rem;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+  color: #343334;
+}
