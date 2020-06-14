@@ -28,8 +28,10 @@ function MobileNet() {
       mobileNet = await ml5.featureExtractor('MobileNet');
       console.log('model ready');
       classifier = await mobileNet.classification();
-      await classifier.load('model.json');
-      console.log('custom model loaded');
+      if (process.env.NODE_ENV === 'development') {
+        await classifier.load('model.json');
+        console.log('custom model loaded');
+      }
       await classifier.addImage(document.getElementById('maguroA'), 'maguro');
       await classifier.addImage(document.getElementById('maguroB'), 'maguro');
       await classifier.addImage(document.getElementById('maguroC'), 'maguro');
@@ -124,7 +126,7 @@ function MobileNet() {
       <div className="datasetContainer col-50">
         <h1>Data set</h1>
         <div className="d-flex">
-          <button onClick={handleTrainClick} disabled={loading}>
+          <button onClick={handleTrainClick} disabled={loading} className="m-r">
             {loading ? 'Training...' : 'Train'}
           </button>
           <button onClick={() => classifier && classifier.save()}>

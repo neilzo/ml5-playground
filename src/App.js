@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 import MobileNet from "./MobileNet";
 import KNN from "./KNN";
@@ -8,15 +8,24 @@ import './table.css';
 import './imageGrid.css';
 
 function App() {
-  const [activeTab, setActiveTab] = useState(1);
+  const hash = window.location.hash;
+  const tab = hash === '#mobilenet' ? 0 : 1;
+  const [activeTab, setActiveTab] = useState(tab);
+
+  useEffect(() => {
+    if (!window.location.hash) {
+      window.location.hash = '#mobilenet';
+      setActiveTab(0);
+    }
+  }, []);
 
   return (
     <div className="App">
       <header>
-        <a href="#" onClick={() => setActiveTab(0)}>
+        <a href="#mobilenet" onClick={() => setActiveTab(0)}>
           MobileNet
         </a>
-        <a href="#" onClick={() => setActiveTab(1)}>
+        <a href="#knn" onClick={() => setActiveTab(1)}>
           KNN
         </a>
       </header>
