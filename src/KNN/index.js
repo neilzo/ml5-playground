@@ -6,13 +6,13 @@ import './KNN.css';
 
 let video;
 let featureExtractor;
+let animationFrame; // TODO: BAD
 const knnClassifier = ml5.KNNClassifier();
 
 function KNN() {
   const [counts, setCounts] = useState({});
   const [results, setResults] = useState({});
   const [predicting, setPredicting] = useState(false);
-  let animationFrame;
 
 
   const setup = (p) => {
@@ -50,6 +50,7 @@ function KNN() {
     // You can pass in a callback function `gotResults` to knnClassifier.classify function
     try {
       const results = await knnClassifier.classify(features);
+      console.count('running');
       setResults(results);
     } catch (err) {
       console.error(err);
@@ -57,15 +58,15 @@ function KNN() {
   };
 
   const startPredicting = () => {
-    const cb = () => {
-        animationFrame = requestAnimationFrame(cb);
-        classify();
-    };
     setPredicting(true);
-    animationFrame = requestAnimationFrame(cb);
+    animationFrame = requestAnimationFrame(() => {
+      classify();
+      animationFrame = requestAnimationFrame(startPredicting);
+    });
   };
 
   const stopPredicting = () => {
+    console.log('stop predicted called', animationFrame);
     setPredicting(false);
     cancelAnimationFrame(animationFrame);
   };
