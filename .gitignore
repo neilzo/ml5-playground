@@ -20,7 +20,7 @@
 .idea
 
 # og images
-assets
+og_assets
 
 npm-debug.log*
 yarn-debug.log*
