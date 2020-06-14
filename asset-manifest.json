@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/ml5-playground/static/css/main.51685304.chunk.css",
-    "main.js": "/ml5-playground/static/js/main.0b459d56.chunk.js",
-    "main.js.map": "/ml5-playground/static/js/main.0b459d56.chunk.js.map",
-    "runtime-main.js": "/ml5-playground/static/js/runtime-main.e7582fc5.js",
-    "runtime-main.js.map": "/ml5-playground/static/js/runtime-main.e7582fc5.js.map",
-    "static/js/2.ff5b8fa3.chunk.js": "/ml5-playground/static/js/2.ff5b8fa3.chunk.js",
-    "static/js/2.ff5b8fa3.chunk.js.map": "/ml5-playground/static/js/2.ff5b8fa3.chunk.js.map",
-    "index.html": "/ml5-playground/index.html",
-    "precache-manifest.ee5e146dfcb5f44eaa32d0cf5f09b07e.js": "/ml5-playground/precache-manifest.ee5e146dfcb5f44eaa32d0cf5f09b07e.js",
-    "service-worker.js": "/ml5-playground/service-worker.js",
-    "static/css/main.51685304.chunk.css.map": "/ml5-playground/static/css/main.51685304.chunk.css.map",
-    "static/js/2.ff5b8fa3.chunk.js.LICENSE.txt": "/ml5-playground/static/js/2.ff5b8fa3.chunk.js.LICENSE.txt",
-    "static/media/nigiri_maguro.jpg": "/ml5-playground/static/media/nigiri_maguro.474b437e.jpg",
-    "static/media/nigiri_maguro_b.jpg": "/ml5-playground/static/media/nigiri_maguro_b.0f993392.jpg",
-    "static/media/nigiri_maguro_c.jpg": "/ml5-playground/static/media/nigiri_maguro_c.78df63c6.jpg",
-    "static/media/nigiri_maguro_d.png": "/ml5-playground/static/media/nigiri_maguro_d.4fb6e17a.png",
-    "static/media/nigiri_salmon.jpg": "/ml5-playground/static/media/nigiri_salmon.5ce2f93b.jpg",
-    "static/media/nigiri_salmon_b.jpg": "/ml5-playground/static/media/nigiri_salmon_b.ab51f1db.jpg",
-    "static/media/nigiri_salmon_c.jpg": "/ml5-playground/static/media/nigiri_salmon_c.c23c2d21.jpg"
+    "main.css": "/static/css/main.2eee055b.chunk.css",
+    "main.js": "/static/js/main.c112317a.chunk.js",
+    "main.js.map": "/static/js/main.c112317a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c769fa8c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c769fa8c.js.map",
+    "static/js/2.2edb621a.chunk.js": "/static/js/2.2edb621a.chunk.js",
+    "static/js/2.2edb621a.chunk.js.map": "/static/js/2.2edb621a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.531c8c1d01813c0db6e65c75e4826870.js": "/precache-manifest.531c8c1d01813c0db6e65c75e4826870.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.2eee055b.chunk.css.map": "/static/css/main.2eee055b.chunk.css.map",
+    "static/js/2.2edb621a.chunk.js.LICENSE.txt": "/static/js/2.2edb621a.chunk.js.LICENSE.txt",
+    "static/media/nigiri_maguro.jpg": "/static/media/nigiri_maguro.474b437e.jpg",
+    "static/media/nigiri_maguro_b.jpg": "/static/media/nigiri_maguro_b.0f993392.jpg",
+    "static/media/nigiri_maguro_c.jpg": "/static/media/nigiri_maguro_c.78df63c6.jpg",
+    "static/media/nigiri_maguro_d.png": "/static/media/nigiri_maguro_d.4fb6e17a.png",
+    "static/media/nigiri_salmon.jpg": "/static/media/nigiri_salmon.5ce2f93b.jpg",
+    "static/media/nigiri_salmon_b.jpg": "/static/media/nigiri_salmon_b.ab51f1db.jpg",
+    "static/media/nigiri_salmon_c.jpg": "/static/media/nigiri_salmon_c.c23c2d21.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e7582fc5.js",
-    "static/js/2.ff5b8fa3.chunk.js",
-    "static/css/main.51685304.chunk.css",
-    "static/js/main.0b459d56.chunk.js"
+    "static/js/runtime-main.c769fa8c.js",
+    "static/js/2.2edb621a.chunk.js",
+    "static/css/main.2eee055b.chunk.css",
+    "static/js/main.c112317a.chunk.js"
   ]
 }
