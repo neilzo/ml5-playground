@@ -1,6 +1,6 @@
 :root {
   --border-radius: 0.2rem;
-  --blue: #192DFF;
+  --blue: #192dff;
   --orange: #FFA726;
   --green: #44EBA1;
   --yellow: #FFFB38;
@@ -47,4 +47,9 @@ button:disabled {
 
 img {
   max-width: 100%;
+}
+
+a {
+  color: var(--blue);
+  margin-right: 0.5rem;
 }
